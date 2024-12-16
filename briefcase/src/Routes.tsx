@@ -8,6 +8,9 @@ import {
 import MainLayout from "./layout/MainLayout";
 import HomePage from "./pages/HomePage";
 import NotFoundPage from "./pages/NotFoundPage";
+import AboutMe from "./pages/AboutMe";
+import Projects from "./pages/Projects";
+import Contact from "./pages/ContactMe";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -16,6 +19,9 @@ const router = createBrowserRouter(
         <Route index element={<HomePage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
+      <Route path="/about" element={<AboutMe />} />
+      <Route path="/project" element={<Projects />} />
+      <Route path="/contact" element={<Contact />} />
     </Fragment>
   )
 );
