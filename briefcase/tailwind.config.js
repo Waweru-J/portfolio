@@ -12,6 +12,10 @@ export default {
     //   desktop: "1280px",
     //   // => @media (min-width: 1280px) { ... }
     // },
+    container:{
+      center:true,
+      padding:"2rem"
+    },
     extend: {
       fontFamily: {
         sans: ["Roboto", "sans-serif"],
