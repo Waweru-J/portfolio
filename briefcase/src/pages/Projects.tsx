@@ -1,7 +1,5 @@
-
-import ProjectCard from "../components/ProjectCard"; 
+import ProjectCard from "../components/ProjectCard";
 import portfolio from "../assets/port.png";
-
 
 const projects = [
   {
@@ -12,7 +10,7 @@ const projects = [
     technologies: ["React", "TypeScript", "TailwindCSS"],
     github: "https://github.com/yourusername/portfolio",
     liveDemo: "https://yourportfolio.com",
-    image: portfolio, 
+    image: portfolio,
   },
   {
     id: 2,
@@ -32,16 +30,31 @@ const projects = [
     technologies: ["React", "Firebase", "TailwindCSS"],
     github: "https://github.com/yourusername/task-manager",
     liveDemo: "https://yourtaskmanager.com",
-    image: portfolio
+    image: portfolio,
   },
-  // Add more projects here...
+  {
+    id: 4,
+    title: "Weather App",
+    description:
+      "A simple weather application fetching real-time weather data using OpenWeather API.",
+    technologies: ["React", "TailwindCSS", "REST API"],
+    github: "https://github.com/yourusername/weather-app",
+    liveDemo: "https://yourweatherapp.com",
+    image: portfolio,
+  },
 ];
 
 const ProjectsPage = () => {
   return (
-    <div className="bg-teal-950 min-h-screen text-white px-4 py-8">
-      <h1 className="text-4xl font-bold text-center text-sky-500 mb-8">My Projects</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div id="projects" className="bg-blue
+    -950 min-h-screen text-white px-6 py-12">
+      {/* Header Section */}
+      <h1 className="text-4xl font-bold text-center text-sky-400 mb-12">
+        My Projects
+      </h1>
+
+      {/* Projects Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}

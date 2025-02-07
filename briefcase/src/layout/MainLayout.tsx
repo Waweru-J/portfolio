@@ -1,24 +1,32 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import { Fragment } from "react/jsx-runtime";
-import AboutMe from "../pages/AboutMe";
-import Projects from "../pages/Projects"
-import ContactMe from "../pages/ContactMe"
+import { useEffect } from "react";
 
 const MainLayout = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Extract target ID from pathname
+    const targetId = location.pathname.substring(1); // Remove leading '/'
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      // Scroll smoothly to the element if it exists
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    } else {
+      // Default behavior: Scroll to the top of the page
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [location]);
+
   return (
-    <Fragment>
-      <div className="bg-teal-950 ">
+    <div className="bg-blue-950 min-h-screen">
       <Navbar />
       <div className="mt-20">
-      <Outlet />
+        <Outlet />
       </div>
-     
-      </div>
-      <AboutMe />
-      <Projects />
-      <ContactMe />
-    </Fragment>
+    </div>
   );
 };
+
 export default MainLayout;

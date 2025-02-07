@@ -1,16 +1,24 @@
-import { Fragment } from "react";
 import Hero from "../components/Hero";
-// import AboutMe from "./AboutMe";  // If you're adding the AboutMe section later
+import AboutMe from "./AboutMe";
+import ProjectsPage from "./Projects";
+import ContactMe from "./ContactMe";
 
 const HomePage = () => {
   return (
-    <Fragment>
-      <div className="min-h-screen">
+    <div>
+      <section id="hero">
         <Hero />
-        {/* Additional Sections can be added here */}
-      </div>
-      {/* <AboutMe /> */}
-    </Fragment>
+      </section>
+      <section id="aboutme">
+        <AboutMe />
+      </section>
+      <section id="projects">
+        <ProjectsPage />
+      </section>
+      <section id="contactme">
+        <ContactMe />
+      </section>
+    </div>
   );
 };
 

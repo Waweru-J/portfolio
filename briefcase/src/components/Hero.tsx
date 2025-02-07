@@ -6,7 +6,7 @@ import photo from "../assets/passport.jpg";
 
 const Hero = () => {
   return (
-    <section className="py-16 bg-gradient-to-r from-teal-800 to-teal-900 text-white">
+    <section className="py-16 bg-gradient-to-r from-blue-800 to-blue-900 text-white">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 px-6 lg:px-16">
         {/* Left Section */}
         <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left">
@@ -26,7 +26,7 @@ const Hero = () => {
               to="https://github.com/yourusername"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-full bg-white text-gray-800 transition-transform hover:scale-110 hover:bg-teal-600 hover:text-white"
+              className="p-2 rounded-full bg-white text-gray-800 transition-transform hover:scale-110 hover:bg-blue-600 hover:text-white"
             >
               <FontAwesomeIcon icon={faGithub} className="text-3xl" />
             </NavLink>
@@ -36,13 +36,13 @@ const Hero = () => {
           <div className="flex justify-center md:justify-start gap-6">
             <NavLink
               to="/project"
-              className="inline-block rounded-lg bg-teal-700 text-neutral-50 px-8 py-3 text-sm font-medium uppercase tracking-wide transition duration-300 ease-in-out transform hover:bg-teal-600 hover:scale-105"
+              className="inline-block rounded-lg bg-blue-700 text-neutral-50 px-8 py-3 text-sm font-medium uppercase tracking-wide transition duration-300 ease-in-out transform hover:bg-blue-600 hover:scale-105"
             >
               See My Projects
             </NavLink>
             <NavLink
               to="/contact"
-              className="inline-block rounded-lg bg-transparent border-2 border-teal-700 text-teal-700 px-8 py-3 text-sm font-medium uppercase tracking-wide transition duration-300 ease-in-out transform hover:bg-teal-700 hover:text-neutral-50 hover:scale-105"
+              className="inline-block rounded-lg bg-transparent border-2 border-blue-700 text-blue-700 px-8 py-3 text-sm font-medium uppercase tracking-wide transition duration-300 ease-in-out transform hover:bg-blue-700 hover:text-neutral-50 hover:scale-105"
             >
               Contact Me
             </NavLink>
@@ -59,27 +59,27 @@ const Hero = () => {
                 alt="Joseph Waweru"
                 className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
               />
-              <h3 className="text-xl text-teal-500 font-semibold">Key Skills</h3>
+              <h3 className="text-xl text-blue-500 font-semibold">Key Skills</h3>
             </div>
             
             {/* Key Skills Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm">
-              <div className="text-center bg-teal-600 text-white py-2 rounded-md">
+              <div className="text-center bg-blue-600 text-white py-2 rounded-md">
                 React
               </div>
-              <div className="text-center bg-teal-600 text-white py-2 rounded-md">
+              <div className="text-center bg-blue-600 text-white py-2 rounded-md">
                 Node.js
               </div>
-              <div className="text-center bg-teal-600 text-white py-2 rounded-md">
+              <div className="text-center bg-blue-600 text-white py-2 rounded-md">
                 Express.js
               </div>
-              <div className="text-center bg-teal-600 text-white py-2 rounded-md">
+              <div className="text-center bg-blue-600 text-white py-2 rounded-md">
                 MongoDB
               </div>
-              <div className="text-center bg-teal-600 text-white py-2 rounded-md">
+              <div className="text-center bg-blue-600 text-white py-2 rounded-md">
                 JavaScript
               </div>
-              <div className="text-center bg-teal-600 text-white py-2 rounded-md">
+              <div className="text-center bg-blue-600 text-white py-2 rounded-md">
                 TypeScript
               </div>
             </div>
@@ -95,7 +95,7 @@ const Hero = () => {
             <div className="flex justify-center md:justify-start gap-6 mt-8">
               <NavLink
                 to="/contact"
-                className="inline-block rounded-lg bg-teal-700 text-neutral-50 px-8 py-3 text-sm font-medium uppercase tracking-wide transition duration-300 ease-in-out transform hover:bg-teal-600 hover:scale-105"
+                className="inline-block rounded-lg bg-blue-700 text-neutral-50 px-8 py-3 text-sm font-medium uppercase tracking-wide transition duration-300 ease-in-out transform hover:bg-blue-600 hover:scale-105"
               >
                 Hire Me Now
               </NavLink>
